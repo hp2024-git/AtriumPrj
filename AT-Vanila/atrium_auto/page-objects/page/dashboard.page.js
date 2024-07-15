@@ -1,5 +1,5 @@
 const Page = require('./page.js');
-const _elements = require('../../page-objects/uimap/dashboard/dashboard.uimap.js');
+const _elements = require('../uimap/dashboard/dashboard.uimap.js');
 const _waits = require('../../../utilities/common/waits.js');
 const _actions = require('../../../utilities/common/actions.js');
 const _actions1 = require('../../../utilities/common/actions.js');
