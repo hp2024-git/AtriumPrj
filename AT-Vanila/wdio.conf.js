@@ -133,7 +133,7 @@ export const config = {
   // If you are using Cucumber you need to specify the location of your step definitions.
   cucumberOpts: {
     // <string[]> (file/dir) require files before executing features
-    require: [`${process.cwd()}/test/step-definitions/login.steps.js`],
+    require: [`${process.cwd()}/atrium_auto/step-definitions/login.steps.js`], 
     // <boolean> show full backtrace for errors
     backtrace: false,
     // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
@@ -328,16 +328,24 @@ export const config = {
       browserName: 'chrome',
       'goog:chromeOptions': {
         args: [
-          'incognito',
           // 'default',
           'Zoom 20%',
-          '--force-device-scale-factor=0.8',
-          // '--disable-infobars',
-          // '--start-maximized',
+          //'--force-device-scale-factor=0.8',
+          // '--disable-infobars',    
           // "--disable-gpu",
           // "document.body.style.transform='scale(0.5)'",
-          'disable-web-security',
-          'allow-running-insecure-content',
+          '--incognito',                      // Start in incognito mode
+          '--disable-first-run-ui',           // Disable first-run UI
+          '--no-default-browser-check',       // Disable default browser check
+          '--disable-default-apps',           // Disable default apps
+          '--disable-popup-blocking',         // Disable popup blocking
+          '--disable-extensions',             // Disable extensions
+          '--disable-infobars',               // Disable infobars
+          '--disable-notifications',          // Disable notifications
+          '--disable-save-password-bubble',   // Disable save password prompt
+          '--disable-web-security',           // Disable web security (if needed)
+          //'--start-maximized',                 // Start maximized (optional)
+          '--disable-search-engine-choice-screen',  //Disable search engine popup
           //   'profile-directory=Profile',
         ],
       },

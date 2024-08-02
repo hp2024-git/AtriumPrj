@@ -20,13 +20,12 @@ class LoginPage extends Page {
   async inputEmail(email) {
     await _waits.waitUntilDisplayed(_elements.loginPage.loc_txtEmailOrUsername, true);
     await _elements.loginPage.loc_txtEmailOrUsername.setValue(email);
-    await this.submit();
   }
 
-  async inputPassword(pwd) {
+  async inputPassword(password) {
     await _waits.waitUntilDisplayed(_elements.loginPage.loc_txtPassword, true);
-    await _elements.loginPage.loc_txtPassword.setValue(pwd);
-    await this.submit();
+    await _elements.loginPage.loc_txtPassword.setValue(password);
+    await this.connection();
     await _waits.waitForComplete();
   }
 
@@ -36,7 +35,7 @@ class LoginPage extends Page {
       _elements.loginPage.loc_cbDontShowAgain,
       true
     );
-    await this.submit();
+    await this.connection();
   }
 
   async useOtherAccount() {

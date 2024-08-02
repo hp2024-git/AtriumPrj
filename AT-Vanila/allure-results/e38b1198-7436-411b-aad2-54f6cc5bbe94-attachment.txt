@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[text() = 'Portals']\"}\n  (Session info: chrome=127.0.6533.89)",
+  "stacktrace": "\tGetHandleVerifier [0x00007FF617F29632+30946]\n\t(No symbol) [0x00007FF617EDE3C9]\n\t(No symbol) [0x00007FF617DD6FDA]\n\t(No symbol) [0x00007FF617E2822C]\n\t(No symbol) [0x00007FF617E2850C]\n\t(No symbol) [0x00007FF617E6DCB7]\n\t(No symbol) [0x00007FF617E4CAAF]\n\t(No symbol) [0x00007FF617E6B041]\n\t(No symbol) [0x00007FF617E4C813]\n\t(No symbol) [0x00007FF617E1A6E5]\n\t(No symbol) [0x00007FF617E1B021]\n\tGetHandleVerifier [0x00007FF61805F83D+1301229]\n\tGetHandleVerifier [0x00007FF61806BDB7+1351783]\n\tGetHandleVerifier [0x00007FF618062A03+1313971]\n\tGetHandleVerifier [0x00007FF617F5DD06+245686]\n\t(No symbol) [0x00007FF617EE758F]\n\t(No symbol) [0x00007FF617EE3804]\n\t(No symbol) [0x00007FF617EE3992]\n\t(No symbol) [0x00007FF617EDA3EF]\n\tBaseThreadInitThunk [0x00007FFE9DC27374+20]\n\tRtlUserThreadStart [0x00007FFE9F97CC91+33]\n"
+}

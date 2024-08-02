@@ -6,6 +6,6 @@ module.exports = {
     return $(`//button[.//span[text()=" Connection "]]`);
   },
   get loc_txtPassword() {
-    return $(`//input[@type="password"]`);
+    return $(`//input[@formcontrolname="password"]`);
   }
 };
