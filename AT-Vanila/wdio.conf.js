@@ -22,7 +22,7 @@ export const config = {
   // The path of the spec files will be resolved relative from the directory of
   // of the config file unless it's absolute.
   //
-  specs: [`${process.cwd()}/test/features/login.feature`],
+  specs: [`${process.cwd()}/atrium_auto/features/loginpage.feature`],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'

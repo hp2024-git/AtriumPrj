@@ -1,9 +1,8 @@
-Feature: HR Login
+Feature: Atrium Login
 
-  Scenario Outline: As a user, I can log into HR system dashboard
+  Scenario Outline: As a user, I can log into Atrium system
 
     Given I am on the login page
-    When I login with valid credentials
-    Then I should see a system dashboard title
-    And test git and AVC KLJLJ test changes
+    When I login with Super admin credentials
+    Then I should see Portals page
 

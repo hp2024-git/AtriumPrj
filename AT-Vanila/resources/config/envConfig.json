@@ -1,6 +1,10 @@
 {
-  "HR": {
-    "envName": "HRUAT2",
-    "url": "https://scc-uat2.sandbox.operations.dynamics.com/"
+  "AtriumUAT": {
+    "envName": "AtriumUAT",
+    "url": "https://monitia-test.fr.scc.com/"
+  },
+  "AtriumDEV": {
+    "envName": "AtriumDEV",
+    "url": "https://monitia-test.fr.scc.com/"
   }
 }

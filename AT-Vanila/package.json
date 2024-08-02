@@ -1,5 +1,5 @@
 {
-  "name": "SCC-D365HR-TestAutomation",
+  "name": "Atrium",
   "type": "commonjs",
   "devDependencies": {
     "@babel/core": "^7.24.5",
