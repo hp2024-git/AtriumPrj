@@ -1,0 +1,27 @@
+{
+   "GeneralProfiles": {
+     "firstName": "Khang",
+     "lastName": "Test20",
+     "phone": "0903123456",
+     "email": "khangtest20@yopmail.com",
+     "status": "",
+     "username": "khangtest20",
+     "profile": "",
+     "sigmaCustomerCode": "",
+     "entity": "",
+     "siret": "12003705600021"
+   },
+   "CustomerPrescriber": {
+    "firstName": "Customer",
+    "lastName": "Prescriber01",
+    "phone": "",
+    "email": "customerprescriber01@yopmail.com",
+    "status": "",
+    "username": "khangtest01",
+    "profile": "",
+    "sigmaCustomerCode": "",
+    "entity": "",
+    "siret": "12003705600021",
+    "agreementNumber": "100"
+  }
+}

@@ -1,4 +1,8 @@
 {
+  "Empty": {
+    "Email": "",
+    "Password": ""
+  },
   "Superadmin": {
     "Email": "trnguyen@fr.scc.com",
     "Password": "DxN5d7qLUV6@"

@@ -1,0 +1,28 @@
+{
+    "portalAlpine2": {
+      "portalName": "alpine2",
+      "customerName": "",
+      "firstName": "",
+      "lastName": "",
+      "SCCGenericMailBox": "",
+      "SCCGenericRequestMailBox": "",
+      "sender": "",
+      "supportEmail": "",
+      "mainCustomerContactName": "",
+      "mainCustomerContactMail": "",
+      "sigmaCustomerCode": ""
+    },
+    "testPortal": {
+      "portalName": "test",
+      "customerName": "Test20",
+      "firstName": "Monitia",
+      "lastName": "Salesman",
+      "SCCGenericMailBox": "devheliosscc@gmail.com",
+      "SCCGenericRequestMailBox": "devheliosscc@gmail.com",
+      "sender": "devheliosscc@gmail.com",
+      "supportEmail": "support-atrium@fr.scc.com",
+      "mainCustomerContactName": "",
+      "mainCustomerContactMail": "",
+      "sigmaCustomerCode": ""
+    } 
+ }

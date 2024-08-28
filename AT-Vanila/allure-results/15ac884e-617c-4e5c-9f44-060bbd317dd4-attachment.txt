@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@type= \"password\"]\"}\n  (Session info: chrome=124.0.6367.119)",
-  "stacktrace": "\tGetHandleVerifier [0x00007FF7357E1502+60802]\n\t(No symbol) [0x00007FF73575AC02]\n\t(No symbol) [0x00007FF735617CE4]\n\t(No symbol) [0x00007FF735666D4D]\n\t(No symbol) [0x00007FF735666E1C]\n\t(No symbol) [0x00007FF7356ACE37]\n\t(No symbol) [0x00007FF73568ABBF]\n\t(No symbol) [0x00007FF7356AA224]\n\t(No symbol) [0x00007FF73568A923]\n\t(No symbol) [0x00007FF735658FEC]\n\t(No symbol) [0x00007FF735659C21]\n\tGetHandleVerifier [0x00007FF735AE411D+3217821]\n\tGetHandleVerifier [0x00007FF735B260B7+3488055]\n\tGetHandleVerifier [0x00007FF735B1F03F+3459263]\n\tGetHandleVerifier [0x00007FF73589B846+823494]\n\t(No symbol) [0x00007FF735765F9F]\n\t(No symbol) [0x00007FF735760EC4]\n\t(No symbol) [0x00007FF735761052]\n\t(No symbol) [0x00007FF7357518A4]\n\tBaseThreadInitThunk [0x00007FFD8CD584D4+20]\n\tRtlUserThreadStart [0x00007FFD8E431791+33]\n"
-}

@@ -1,6 +1,6 @@
 # Introduction
 
-This is a test automation project for D365 Human Resource system , using WDIO(v8) test framework, and using Cucumber to brings true BDD to JavaScript. Instead of writing complicated test code that only developers can understand, Cucumber maps an ordinary language to code and allows to start with the test process in the early stages of your product development.
+This is a test automation project for Atrium system , using WDIO(v8) test framework, and using Cucumber to brings true BDD to JavaScript. Instead of writing complicated test code that only developers can understand, Cucumber maps an ordinary language to code and allows to start with the test process in the early stages of your product development.
 
 # Requirements
 

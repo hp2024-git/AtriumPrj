@@ -5,17 +5,19 @@
     "@babel/core": "^7.24.5",
     "@babel/preset-env": "^7.24.5",
     "@babel/register": "^7.23.7",
-    "@wdio/allure-reporter": "^8.36.1",
+    "@wdio/allure-reporter": "^8.39.0",
     "@wdio/cli": "^8.36.1",
     "@wdio/cucumber-framework": "^8.36.1",
     "@wdio/local-runner": "^8.36.1",
     "@wdio/spec-reporter": "^8.36.1",
-    "@wdio/visual-service": "^4.1.2"
+    "@wdio/visual-service": "^4.1.2",
+    "allure-commandline": "^2.30.0",
+    "chai": "^5.1.1"
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js"
   },
   "dependencies": {
-    "chromedriver": "^127.0.0"
+    "chromedriver": "^128.0.0"
   }
 }

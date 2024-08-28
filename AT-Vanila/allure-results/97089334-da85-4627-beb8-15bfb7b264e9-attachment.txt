@@ -1,3 +1,0 @@
-{
-  "url": "https://scc-uat2.sandbox.operations.dynamics.com/"
-}

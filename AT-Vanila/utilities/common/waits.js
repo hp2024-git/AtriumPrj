@@ -8,7 +8,7 @@ module.exports = {
     try {
       await elem.waitForDisplayed({
         timeout: 50000,
-        timeoutMsg: 'Element is not displayed',
+        timeoutMsg: "Element is not displayed",
         interval: 500,
       });
     } catch (e) {
@@ -36,10 +36,10 @@ module.exports = {
    */
   async waitForComplete() {
     await browser.waitUntil(
-      () => browser.execute(() => document.readyState === 'complete'),
+      () => browser.execute(() => document.readyState === "complete"),
       {
         timeout: 60 * 1000, // 60 seconds
-        timeoutMsg: 'Message on failure',
+        timeoutMsg: "Message on failure",
       }
     );
   },

@@ -1,25 +1,22 @@
-const { Given, When, Then } = require('@wdio/cucumber-framework');
-const { expect } = require('@wdio/globals');
+const { When, Then } = require("@wdio/cucumber-framework");
+const { expect } = require("@wdio/globals");
 
-const LoginPage = require('../page-objects/page/login.page.js');
-const PortalsPage = require('../page-objects/page/portals.page.js');
+const LoginPage = require("../page-objects/page/login.page.js");
+const PortalsPage = require("../page-objects/page/admin/portals.page.js");
 
-const user = require('../../resources/data/auth/userSet.json');
-const environment = require('../../resources/config/envConfig.json');
+const user = require("../../resources/data/auth/userSet.json");
 
-Given(/^I am on the login page$/, async () => {
-  await LoginPage.navigate(environment.AtriumDEV.url);
-});
+const _function = require("../../utilities/common/functions.js");
 
-/*When(/^I am using another account$/, async () => {
-  await LoginPage.useOtherAccount();
-});*/
+When(
+  /^User can logins successfully to Atrium with a valid Email or Username and valid password$/,
+  async () => {
+    await LoginPage.login(user.Superadmin.Email, user.Superadmin.Password);
+  }
+);
 
-When(/^I login with Super admin credentials$/, async () => {
-  await LoginPage.login(user.Superadmin.Email, user.Superadmin.Password);
-});
-
-Then(/^I should see Portals page$/, async () => {
+Then(/^User should see Portals page$/, async () => {
   let actual = await PortalsPage.getPortalsTitle();
-  await expect(actual).toEqual('Portals');
+  await expect(actual).toEqual("Portals");
+  await _function.getScreenshot("LoginSuccessfullyToAtrium");
 });

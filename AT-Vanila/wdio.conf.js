@@ -22,7 +22,7 @@ export const config = {
   // The path of the spec files will be resolved relative from the directory of
   // of the config file unless it's absolute.
   //
-  specs: [`${process.cwd()}/atrium_auto/features/loginpage.feature`],
+  specs: [`${process.cwd()}/atrium_auto/features/admin.feature`],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -128,12 +128,19 @@ export const config = {
   // Test reporter for stdout.
   // The only one supported by default is 'dot'
   // see also: https://webdriver.io/docs/dot-reporter
-  reporters: ['spec', ['allure', { outputDir: 'allure-results' }]],
+  reporters: [
+    'spec', ['allure', {
+       outputDir: 'allure-results',
+       disableWebdriverStepsReporting: true,
+       disableWebdriverScreenshotsReporting: false,
+       }]
+  
+  ],
 
   // If you are using Cucumber you need to specify the location of your step definitions.
   cucumberOpts: {
     // <string[]> (file/dir) require files before executing features
-    require: [`${process.cwd()}/atrium_auto/step-definitions/login.steps.js`], 
+    require: [`${process.cwd()}/atrium_auto/step-definitions/*.steps.js`], 
     // <boolean> show full backtrace for errors
     backtrace: false,
     // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
@@ -329,11 +336,7 @@ export const config = {
       'goog:chromeOptions': {
         args: [
           // 'default',
-          'Zoom 20%',
-          //'--force-device-scale-factor=0.8',
-          // '--disable-infobars',    
-          // "--disable-gpu",
-          // "document.body.style.transform='scale(0.5)'",
+          //'Zoom 20%',
           '--incognito',                      // Start in incognito mode
           '--disable-first-run-ui',           // Disable first-run UI
           '--no-default-browser-check',       // Disable default browser check
@@ -344,8 +347,8 @@ export const config = {
           '--disable-notifications',          // Disable notifications
           '--disable-save-password-bubble',   // Disable save password prompt
           '--disable-web-security',           // Disable web security (if needed)
-          //'--start-maximized',                 // Start maximized (optional)
           '--disable-search-engine-choice-screen',  //Disable search engine popup
+          '--start-maximized'                 //Open maximize the browser
           //   'profile-directory=Profile',
         ],
       },

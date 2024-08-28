@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//span[@id = \"NavBarDashboard_label\"]"
-}
