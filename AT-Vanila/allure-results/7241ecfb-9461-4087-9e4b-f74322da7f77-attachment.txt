@@ -1,0 +1,4 @@
+{
+  "script": "return (() => document.readyState === 'complete').apply(null, arguments)",
+  "args": []
+}

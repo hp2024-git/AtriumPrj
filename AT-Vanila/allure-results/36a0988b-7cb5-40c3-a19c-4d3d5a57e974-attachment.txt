@@ -1,0 +1,3 @@
+{
+  "url": "https://monitia-dev.fr.scc.com/"
+}
